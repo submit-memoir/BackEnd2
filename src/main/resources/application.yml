@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/memoir?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: "0000"
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+  auth:
+    jwt:
+      secret: 7J2067KI7ZSE66Gc7KCd7Yq47JeQ7ISc7YWM7Iqk7Yq47L2U65Oc7J6Y7Kec66m07KKL6rKg64uk7ZWY7KeA66eM7Ja066C164uk
+      exp:
+        access: 86400
+
